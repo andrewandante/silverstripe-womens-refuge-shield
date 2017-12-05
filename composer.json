@@ -1,7 +1,7 @@
 {
   "name": "andrewandante/womens-refuge-shield",
   "description": "Add the Women's refuge shield to your site",
-  "type": "silverstripe-module",
+  "type": "silverstripe-vendormodule",
   "keywords": ["silverstripe", "womens", "women", "refuge", "shield"],
   "license": "BSD-3-Clause",
   "authors": [
@@ -13,8 +13,20 @@
   ],
   "require":
   {
-    "silverstripe/framework": "~3.0",
-    "silverstripe/siteconfig": "~3.0",
-    "silverstripe/cms": "~3.0"
+    "silverstripe/framework": "^4.0",
+    "silverstripe/siteconfig": "^4.0",
+    "silverstripe/cms": "^4.0"
+  },
+  "extra": {
+    "expose": [
+        "css",
+        "javascript",
+        "img/logos"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "AndrewAndante\\WomensRefugeShield\\": "code/"
+    }
   }
 }

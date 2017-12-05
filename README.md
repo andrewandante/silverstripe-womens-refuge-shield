@@ -26,10 +26,14 @@ Alternatively, you can include `$WomensRefugeShieldButton` anywhere in your temp
 
 ![Button in the footer](img/screenshots/button_in_footer.PNG?raw=true)
 
+## Versioning
+
+- version 1.x is for SilverStripe 3
+- version 2.x is for SilverStripe 4
+
 # Options
 
 You can view all the options on the [Women's Refuge Shielded Site website](https://shielded.co.nz/).
-
 
 # TODO
 
