@@ -12,7 +12,7 @@ That's all there is to it.
 
 # Installation
 
-Include the pride code with `composer require andrewandante/womens-refuge-shield` and select your preferred size in the CMS under Settings.
+Include the shield code with `composer require andrewandante/womens-refuge-shield` and select your preferred size in the CMS under Settings.
 
 Large tab:
 
