@@ -1,0 +1,20 @@
+{
+  "name": "andrewandante/womens-refuge-shield",
+  "description": "Add the Women's refuge shield to your site",
+  "type": "silverstripe-module",
+  "keywords": ["silverstripe", "womens", "women", "refuge", "shield"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Andrew Aitken-Fincham",
+      "email": "andrew@silverstripe.com",
+      "role": "Developer"
+    }
+  ],
+  "require":
+  {
+    "silverstripe/framework": "~3.0",
+    "silverstripe/siteconfig": "~3.0",
+    "silverstripe/cms": "~3.0"
+  }
+}

@@ -1,0 +1,6 @@
+SiteConfig:
+  extensions:
+    - WomensRefugeShieldSiteConfigExtension
+ContentController:
+  extensions:
+    - WomensRefugeShieldControllerExtension
