@@ -14,8 +14,23 @@ That's all there is to it.
 
 Include the pride code with `composer require andrewandante/womens-refuge-shield` and select your preferred size in the CMS under Settings.
 
-This code is not extensively tested due to time constraints.
+Large tab:
+
+![Large tab](img/screenshots/large_tab.PNG?raw=true)
+
+Small tab:
+
+![Small tab](img/screenshots/small_tab.PNG?raw=true)
+
+Alternatively, you can include `$WomensRefugeShieldButton` anywhere in your template:
+
+![Button in the footer](img/screenshots/button_in_footer.PNG?raw=true)
 
 # Options
 
 You can view all the options on the [Women's Refuge Shielded Site website](https://shielded.co.nz/).
+
+
+## TODO
+
+ - responsiveness

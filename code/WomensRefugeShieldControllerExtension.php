@@ -22,10 +22,11 @@ class WomensRefugeShieldControllerExtension extends Extension
                 Requirements::javascript('https://d3f5l8ze0o4j2m.cloudfront.net/m87/k33spt.js');
                 Requirements::javascript($jsDir.'small_tab.js');
                 break;
-            case 3:
-                Requirements::javascript('https://d3f5l8ze0o4j2m.cloudfront.net/m87/k33spt.js');
-                Requirements::javascript($jsDir.'button.js');
-                break;
         }
+    }
+
+    public function getWomensRefugeShieldButton()
+    {
+        return $this->owner->renderWith('WomensRefugeShieldButton');
     }
 }
