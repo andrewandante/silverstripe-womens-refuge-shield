@@ -31,6 +31,12 @@ Alternatively, you can include `$WomensRefugeShieldButton` anywhere in your temp
 You can view all the options on the [Women's Refuge Shielded Site website](https://shielded.co.nz/).
 
 
-## TODO
+# TODO
 
  - responsiveness
+
+# Special Thanks
+
+- Katie Elks for the inspiration!
+- Simon Erkelens for the module Skeleton!
+- [Women's Refuge New Zealand](https://shielded.co.nz/) for the implementation!
