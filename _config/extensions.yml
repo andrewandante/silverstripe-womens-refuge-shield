@@ -1,6 +1,6 @@
-SiteConfig:
+SilverStripe\SiteConfig\SiteConfig:
   extensions:
-    - WomensRefugeShieldSiteConfigExtension
-ContentController:
+    - AndrewAndante\WomensRefugeShield\SiteConfigExtension
+SilverStripe\CMS\Controllers\ContentController:
   extensions:
-    - WomensRefugeShieldControllerExtension
+    - AndrewAndante\WomensRefugeShield\ControllerExtension
