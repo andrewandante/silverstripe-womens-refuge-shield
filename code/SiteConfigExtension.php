@@ -16,18 +16,22 @@ use SilverStripe\SiteConfig\SiteConfig;
 class SiteConfigExtension extends DataExtension
 {
 
-    private static $db = array(
-        'ShieldCode' => 'Int'
-    );
+    private static $db = [
+        'ShieldCode' => 'Int',
+    ];
+
+    private static $defaults = [
+        'UseShieldModuleJs' => false,
+    ];
 
     public function updateCMSFields(FieldList $fields)
     {
-        $fields->addFieldToTab('Root.Main',
-            $selector = DropdownField::create('ShieldCode', 'Select the type of shield to display', [
-            1 => 'Large Tab',
-            2 => 'Small Tab',
-            3 => 'None',
-        ]));
-        $selector->setEmptyString('-- Choose your shield --');
+        $fields->addFieldsToTab('Root.Main', [
+            DropdownField::create('ShieldCode', 'Select the type of shield to display', [
+                1 => 'Large Tab',
+                2 => 'Small Tab',
+                3 => 'None',
+            ])->setEmptyString('-- Choose your shield --')
+        ]);
     }
 }
