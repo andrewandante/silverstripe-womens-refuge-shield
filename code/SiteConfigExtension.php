@@ -20,10 +20,6 @@ class SiteConfigExtension extends DataExtension
         'ShieldCode' => 'Int',
     ];
 
-    private static $defaults = [
-        'UseShieldModuleJs' => false,
-    ];
-
     public function updateCMSFields(FieldList $fields)
     {
         $fields->addFieldsToTab('Root.Main', [
