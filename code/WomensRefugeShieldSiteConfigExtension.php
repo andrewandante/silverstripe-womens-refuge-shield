@@ -8,7 +8,6 @@
  */
 class WomensRefugeShieldSiteConfigExtension extends DataExtension
 {
-
     private static $db = array(
         'ShieldCode' => 'Int'
     );
@@ -16,11 +15,11 @@ class WomensRefugeShieldSiteConfigExtension extends DataExtension
     public function updateCMSFields(FieldList $fields)
     {
         $fields->addFieldToTab('Root.Main',
-            $selector = DropdownField::create('ShieldCode', 'Select the type of shield to display', [
-            1 => 'Large Tab',
-            2 => 'Small Tab',
-            3 => 'None',
-        ]));
-        $selector->setEmptyString('-- Choose your shield --');
+            DropdownField::create('ShieldCode', 'Select the type of shield to display', [
+                1 => 'Large Tab',
+                2 => 'Small Tab',
+                3 => 'None',
+            ])->setEmptyString('-- Choose your shield --')
+        );
     }
 }

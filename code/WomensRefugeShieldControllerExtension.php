@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Class WomensRefugeShieldControllerExtension
  *
@@ -8,25 +7,41 @@
  */
 class WomensRefugeShieldControllerExtension extends Extension
 {
+    /**
+     * @var bool
+     * @config
+     */
+    private static $use_remote_js = false;
+
+    private $jsDir = SS_WOMENS_REFUGE_DIR . DIRECTORY_SEPARATOR . 'javascript' . DIRECTORY_SEPARATOR;
 
     public function onAfterInit()
     {
         $config = SiteConfig::current_site_config();
-        $jsDir = SS_WOMENS_REFUGE_DIR . DIRECTORY_SEPARATOR . 'javascript' . DIRECTORY_SEPARATOR;
         switch ($config->ShieldCode) {
             case 1:
-                Requirements::javascript('https://d3f5l8ze0o4j2m.cloudfront.net/m87/k33spt.js');
-                Requirements::javascript($jsDir.'large_tab.js');
+                $this->requireCoreJS();
+                Requirements::javascript($this->jsDir . 'large_tab.js');
                 break;
             case 2:
-                Requirements::javascript('https://d3f5l8ze0o4j2m.cloudfront.net/m87/k33spt.js');
-                Requirements::javascript($jsDir.'small_tab.js');
+                $this->requireCoreJS();
+                Requirements::javascript($this->jsDir . 'small_tab.js');
                 break;
         }
     }
 
     public function getWomensRefugeShieldButton()
     {
+        $this->requireCoreJS();
         return $this->owner->renderWith('WomensRefugeShieldButton');
+    }
+
+    protected function requireCoreJS()
+    {
+        if (Config::inst()->get(self::class, 'use_remote_js')) {
+            Requirements::javascript('https://d3f5l8ze0o4j2m.cloudfront.net/m87/k33spt.js');
+        } else {
+            Requirements::javascript($this->jsDir . 'k33spt.min.js');
+        }
     }
 }
