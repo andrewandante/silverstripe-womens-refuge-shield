@@ -39,9 +39,9 @@ class WomensRefugeShieldControllerExtension extends Extension
     protected function requireCoreJS()
     {
         if (Config::inst()->get(self::class, 'use_remote_js')) {
-            Requirements::javascript('https://d3f5l8ze0o4j2m.cloudfront.net/m87/k33spt.js');
+            Requirements::javascript('https://staticcdn.co.nz/embed/embed.js');
         } else {
-            Requirements::javascript($this->jsDir . 'k33spt.min.js');
+            Requirements::javascript($this->jsDir . 'embed.js');
         }
     }
 }
