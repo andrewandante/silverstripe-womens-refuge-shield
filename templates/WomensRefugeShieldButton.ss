@@ -2,5 +2,5 @@
 <% require css("womens-refuge-shield/css/button.css") %>
 
 <a href="#" id="womens-refuge-shield-button">
-    <img src="womens-refuge-shield/img/custom-logo.png" alt="Womens refuge shield logo" />
+    <img src="womens-refuge-shield/img/custom-logo.png" alt="Women’s Refuge Shielded Site" />
 </a>
