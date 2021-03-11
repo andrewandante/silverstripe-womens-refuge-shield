@@ -1,3 +1,6 @@
+---
+Name: womensrefugeshieldextensions
+---
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - AndrewAndante\WomensRefugeShield\SiteConfigExtension
