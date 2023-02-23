@@ -11,12 +11,12 @@ use SilverStripe\SiteConfig\SiteConfig;
  * Class AndrewAndante\WomensRefugeShield\SiteConfigExtension
  *
  * @property SiteConfig $owner
- * @property int $Pridecode
+ * @property int $ShieldCode
  */
 class SiteConfigExtension extends DataExtension
 {
 
-    private static $db = [
+    private static array $db = [
         'ShieldCode' => 'Int',
     ];
 

@@ -19,7 +19,7 @@ class ControllerExtension extends Extension
      * @var bool
      * @config
      */
-    private static $use_remote_js = false;
+    private static bool $use_remote_js = false;
 
     public function onAfterInit()
     {
