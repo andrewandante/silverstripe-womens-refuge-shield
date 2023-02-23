@@ -47,8 +47,9 @@ We are satisfied with this review, but each site is different and will have diff
 
 ## Versioning
 
-- version 1.x is for SilverStripe 3
-- version 2.x is for SilverStripe 4
+- version 1.x is for Silverstripe 3
+- version 2.x is for Silverstripe 4
+- version 3.x is for Silverstripe 5
 
 # Options
 
