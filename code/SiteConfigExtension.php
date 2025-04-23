@@ -4,7 +4,7 @@ namespace AndrewAndante\WomensRefugeShield;
 
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\FieldList;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\SiteConfig\SiteConfig;
 
 /**
@@ -13,7 +13,7 @@ use SilverStripe\SiteConfig\SiteConfig;
  * @property SiteConfig $owner
  * @property int $ShieldCode
  */
-class SiteConfigExtension extends DataExtension
+class SiteConfigExtension extends Extension
 {
 
     private static array $db = [

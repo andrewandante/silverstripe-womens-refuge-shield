@@ -1,10 +1,10 @@
 # Women's Refuge Site Shield
 
-This small module is to help you add the [Women's Refuge Shielded Site button](https://shielded.co.nz/) to your SilverStripe website.
+This small module is to help you add the [Women's Refuge Shielded Site button](https://shielded.co.nz/) to your Silverstripe website.
 
 # Usage
 
-This code will help you add the shield to your SilverStripe website.
+This code will help you add the shield to your Silverstripe website.
 
 Select the preferred size in your SiteConfig, and the `WomensRefugeShield\ControllerExtension` will inject the necessary Javascript and CSS in to your pages.
 
@@ -50,14 +50,11 @@ We are satisfied with this review, but each site is different and will have diff
 - version 1.x is for Silverstripe 3
 - version 2.x is for Silverstripe 4
 - version 3.x is for Silverstripe 5
+- version 4.x is for Silverstripe 6
 
 # Options
 
 You can view all the options on the [Women's Refuge Shielded Site website](https://shielded.co.nz/).
-
-# TODO
-
- - responsiveness
 
 # Special Thanks
 
